@@ -1,0 +1,141 @@
+﻿@model IEnumerable<WebApplication1.Models.tbl_FxTransfer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FxTVoucherNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FxTInvoiceNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FxTVoucherTypeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.depositReceipt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PartnerLedgerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrencyId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.transactionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Narration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankLedgerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.version)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paymentMode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chequeNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chequeDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chequeComment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.createdDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.createdBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastUpdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastUpdateBy)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FxTVoucherNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FxTInvoiceNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FxTVoucherTypeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.depositReceipt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PartnerLedgerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrencyId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.transactionDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Narration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankLedgerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.version)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paymentMode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chequeNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chequeDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chequeComment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.createdDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.createdBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastUpdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastUpdateBy)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FxTransferId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FxTransferId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FxTransferId })
+        </td>
+    </tr>
+}
+
+</table>

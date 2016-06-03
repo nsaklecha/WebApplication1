@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExchangeDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_FxTransfer">
+    <Key>
+      <PropertyRef Name="FxTransferId" />
+    </Key>
+    <Property Name="FxTransferId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FxTVoucherNo" Type="Int32" Nullable="false" />
+    <Property Name="FxTInvoiceNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FxTVoucherTypeId" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="depositReceipt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PartnerLedgerId" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CurrencyId" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="transactionDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Narration" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="BankLedgerId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="version" Type="Int32" Nullable="false" />
+    <Property Name="paymentMode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="chequeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="chequeDate" Type="DateTime" Precision="3" />
+    <Property Name="chequeComment" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="createdDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lastUpdate" Type="DateTime" Precision="3" />
+    <Property Name="lastUpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ExchangeDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_FxTransfer" EntityType="Self.tbl_FxTransfer" />
+  </EntityContainer>
+</Schema>

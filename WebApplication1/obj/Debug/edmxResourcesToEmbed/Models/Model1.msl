@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExchangeDBModelStoreContainer" CdmEntityContainer="ExchangeDBEntities">
+    <EntitySetMapping Name="tbl_FxTransfer">
+      <EntityTypeMapping TypeName="ExchangeDBModel.tbl_FxTransfer">
+        <MappingFragment StoreEntitySet="tbl_FxTransfer">
+          <ScalarProperty Name="FxTransferId" ColumnName="FxTransferId" />
+          <ScalarProperty Name="FxTVoucherNo" ColumnName="FxTVoucherNo" />
+          <ScalarProperty Name="FxTInvoiceNo" ColumnName="FxTInvoiceNo" />
+          <ScalarProperty Name="FxTVoucherTypeId" ColumnName="FxTVoucherTypeId" />
+          <ScalarProperty Name="depositReceipt" ColumnName="depositReceipt" />
+          <ScalarProperty Name="PartnerLedgerId" ColumnName="PartnerLedgerId" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="transactionDate" ColumnName="transactionDate" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+          <ScalarProperty Name="BankLedgerId" ColumnName="BankLedgerId" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="paymentMode" ColumnName="paymentMode" />
+          <ScalarProperty Name="chequeNo" ColumnName="chequeNo" />
+          <ScalarProperty Name="chequeDate" ColumnName="chequeDate" />
+          <ScalarProperty Name="chequeComment" ColumnName="chequeComment" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="lastUpdate" ColumnName="lastUpdate" />
+          <ScalarProperty Name="lastUpdateBy" ColumnName="lastUpdateBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
